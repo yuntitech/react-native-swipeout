@@ -154,7 +154,7 @@ var Swipeout = (0, _createReactClass2.default)({
     };
   },
 
-  componentWillMount: function componentWillMount() {
+  componentWillMount: function UNSAFE_componentWillMount() {
     var _this = this;
 
     this._panResponder = _reactNative.PanResponder.create({
@@ -180,7 +180,7 @@ var Swipeout = (0, _createReactClass2.default)({
     });
   },
 
-  componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps: function UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.close) this._close();
     if (nextProps.openRight) this._openRight();
     if (nextProps.openLeft) this._openLeft();
